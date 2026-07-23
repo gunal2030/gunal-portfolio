@@ -33,9 +33,9 @@ export default function Nav() {
         <a href="#" className="flex items-center gap-3 group">
           <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[rgba(79,142,247,0.4)] group-hover:border-[#4f8ef7] transition-all duration-300 shadow-[0_0_12px_rgba(79,142,247,0.3)]">
             <img
-              src="/gunal-profile-4.png"
+              src="/gunal-portrait.jpg"
               alt="Gunal K"
-              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-300"
             />
             <div className="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-[#2dd4bf] border border-[#050507]" />
           </div>

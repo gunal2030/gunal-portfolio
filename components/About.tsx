@@ -13,11 +13,11 @@ export default function About() {
 
               {/* Main Photo Card */}
               <div className="relative rounded-3xl border border-[rgba(255,255,255,0.15)] bg-[#0c0c12] p-3 overflow-hidden shadow-2xl">
-                <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden">
+                <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden bg-[#111118]">
                   <img
-                    src="/gunal-profile-2.png"
+                    src="/gunal-portrait.png"
                     alt="Gunal K — AI Systems Architect"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   />
                   {/* Subtle Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050507] via-transparent to-transparent opacity-85" />

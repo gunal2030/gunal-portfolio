@@ -5,7 +5,7 @@ export default function Footer() {
         {/* Left */}
         <div className="flex items-center gap-3">
           <div className="w-7 h-7 rounded-full overflow-hidden border border-[rgba(79,142,247,0.3)]">
-            <img src="/gunal-profile-4.png" alt="Gunal K" className="w-full h-full object-cover" />
+            <img src="/gunal-portrait.jpg" alt="Gunal K" className="w-full h-full object-cover object-top" />
           </div>
           <span className="text-xs text-[#555568] font-mono">
             Gunal K — AI Systems Architect · Bengaluru, India

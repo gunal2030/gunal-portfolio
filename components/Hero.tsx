@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Architect Profile Badge with Photo */}
       <div className="flex items-center gap-3 mb-8 px-4 py-2 rounded-full border border-[rgba(255,255,255,0.1)] bg-[rgba(255,255,255,0.03)] backdrop-blur-md shadow-lg">
         <div className="relative w-8 h-8 rounded-full overflow-hidden border border-[#4f8ef7]">
-          <img src="/gunal-profile-1.jpg" alt="Gunal K" className="w-full h-full object-cover" />
+          <img src="/gunal-portrait.jpg" alt="Gunal K" className="w-full h-full object-cover object-top" />
         </div>
         <div className="flex items-center gap-2">
           <span className="text-xs text-[#f0f0f5] font-semibold">Gunal K</span>
