@@ -2,59 +2,59 @@
 
 const services = [
   {
-    title: "AI Receptionist System",
-    price: "From $1,500",
-    recurring: "$500/mo maintenance",
-    description: "Never miss a lead again. An always-on voice and SMS receptionist that qualifies every inbound inquiry and books appointments automatically.",
+    title: "AI Receptionist & Emergency Dispatch",
+    price: "From $1,500 Setup",
+    recurring: "$500/mo retainer",
+    description: "Always-on voice & SMS receptionist for US trade businesses (HVAC, Plumbing, Roofing). Captures after-hours calls, categorizes urgency, dispatches SMS to technicians, and syncs directly into ServiceTitan or Housecall Pro.",
     outcomes: [
-      "60-second response time, 24/7",
-      "Automatic appointment booking",
-      "Urgent job escalation to owner",
-      "Weekly performance report",
+      "Sub-60s speed-to-lead response, 24/7",
+      "Emergency job creation in ServiceTitan/Housecall Pro",
+      "Twilio SMS alert to on-call technician",
+      "Weekly revenue audit log",
     ],
-    idealFor: "HVAC, Plumbing, Cleaning, Legal, Dental",
+    idealFor: "HVAC, Plumbing, Electrical, Roofing Contractors",
     accentColor: "#4f8ef7",
   },
   {
-    title: "Lead Recovery & Follow-up",
-    price: "From $1,000",
-    recurring: "$400/mo maintenance",
-    description: "Recover the 60–70% of leads that go cold because nobody followed up fast enough. Automated sequences that run for 7 days without manual effort.",
+    title: "Lead Recovery & Multi-Channel Sequence",
+    price: "From $1,200 Setup",
+    recurring: "$400/mo retainer",
+    description: "Automated sequence engine that re-engages non-responding leads across SMS, email, and LinkedIn over 7 days with context-aware LLM follow-ups.",
     outcomes: [
-      "Instant personalized reply to new leads",
-      "Day 1, 3, 7 follow-up sequences",
-      "HOT/WARM/COLD scoring",
-      "Calendar booking integrated",
+      "Instant personalized response to new leads",
+      "Day 1, 3, 7 automated follow-up logic",
+      "HubSpot / Salesforce pipeline status update",
+      "Direct calendar booking integration",
     ],
-    idealFor: "Coaches, Consultants, Agencies, SaaS",
+    idealFor: "B2B Agencies, Consultants, SaaS, Growth Teams",
     accentColor: "#2dd4bf",
   },
   {
-    title: "CRM & Sales Workflow",
-    price: "From $1,200",
-    recurring: "$450/mo maintenance",
-    description: "Stop losing deals to bad data and forgotten follow-ups. A full pipeline management system with zero manual data entry and automatic stage progression.",
+    title: "CRM Memory & Pipeline Orchestration",
+    price: "From $1,800 Setup",
+    recurring: "$450/mo retainer",
+    description: "End-to-end sales pipeline memory layer built on n8n and PostgreSQL. Eliminates manual CRM data entry and automatically advances deals through 7 stages.",
     outcomes: [
-      "Automatic lead logging from all channels",
-      "7-stage pipeline tracking",
-      "Invoice and payment follow-up",
-      "Monthly revenue summary report",
+      "Zero manual data entry for reps",
+      "7-stage automated deal tracking",
+      "Stale lead detection & Slack alert triggers",
+      "Executive monthly KPI summary",
     ],
-    idealFor: "Service businesses, Small law firms, Accountants",
+    idealFor: "Service Companies, Mid-market Sales Teams, Law Firms",
     accentColor: "#818cf8",
   },
   {
-    title: "AI Architect Consulting",
-    price: "From $800",
-    recurring: "Per session or retainer",
-    description: "Bring me in to map your operations, identify automation opportunities, and design the architecture for your future AI system. Strategy before implementation.",
+    title: "AI System Architecture Audit",
+    price: "From $800 / Session",
+    recurring: "Strategy & Blueprint",
+    description: "A comprehensive 1-on-1 operational audit to map your manual workflows, identify revenue leaks, and design a custom AI system blueprint before building.",
     outcomes: [
-      "Operational workflow audit",
-      "Custom automation architecture",
-      "Tool selection and integration plan",
+      "Workflow leak audit & bottleneck analysis",
+      "Custom system architecture diagram (Mermaid/SVG)",
+      "Tool selection (ServiceTitan, HubSpot, Vapi, n8n)",
       "30-day implementation roadmap",
     ],
-    idealFor: "Founders, Operators, Growth-stage startups",
+    idealFor: "Founders, CTOs, Operators, Growth Executives",
     accentColor: "#e8c547",
   },
 ];
@@ -67,20 +67,20 @@ export default function Services() {
         <div className="mb-16">
           <div className="flex items-center gap-2 mb-4">
             <div className="w-px h-4 bg-[#e8c547]" />
-            <span className="text-xs font-mono text-[#e8c547] tracking-widest uppercase">Services</span>
+            <span className="text-xs font-mono text-[#e8c547] tracking-widest uppercase">Productized Services</span>
           </div>
           <h2
             className="font-[var(--font-display)] font-bold text-[#f0f0f5] leading-tight"
             style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
           >
-            What I Build
+            Engineering Deliverables &
             <br />
             <span style={{
               background: "linear-gradient(135deg, #e8c547, #f5d87a)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
-            }}>For Clients.</span>
+            }}>Retainer Architecture.</span>
           </h2>
         </div>
 
