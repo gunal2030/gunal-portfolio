@@ -1,6 +1,7 @@
 import Nav from "@/components/Nav";
 import GridBackground from "@/components/GridBackground";
 import Hero from "@/components/Hero";
+import AgentSandbox from "@/components/AgentSandbox";
 import Systems from "@/components/Systems";
 import Lab from "@/components/Lab";
 import Process from "@/components/Process";
@@ -19,6 +20,7 @@ export default function Home() {
       <div className="relative z-10">
         <Nav />
         <Hero />
+        <AgentSandbox />
         <Systems />
         <Lab />
         <Process />
