@@ -25,13 +25,20 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20 overflow-hidden">
-      {/* Location tag */}
-      <div className="flex items-center gap-2 mb-8 px-3 py-1.5 rounded-full border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)]">
-        <div className="w-1.5 h-1.5 rounded-full bg-[#2dd4bf] animate-pulse" />
-        <span className="text-xs text-[#8888a0] font-mono tracking-widest uppercase">
-          Bengaluru, India — Working Globally
-        </span>
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-28 pb-20 overflow-hidden">
+      {/* Profile Avatar Badge */}
+      <div className="flex items-center gap-3 mb-8 px-4 py-2 rounded-full border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] backdrop-blur-md">
+        <div className="relative w-7 h-7 rounded-full overflow-hidden border border-[#4f8ef7]">
+          <img src="/gunal-profile-4.png" alt="Gunal K" className="w-full h-full object-cover" />
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-[#f0f0f5] font-medium">Gunal K</span>
+          <span className="text-[#555568]">•</span>
+          <div className="w-1.5 h-1.5 rounded-full bg-[#2dd4bf] animate-pulse" />
+          <span className="text-xs text-[#8888a0] font-mono tracking-wide uppercase">
+            Bengaluru, India — Working Globally
+          </span>
+        </div>
       </div>
 
       {/* Headline */}
@@ -67,7 +74,7 @@ export default function Hero() {
           href="https://cal.com/gunal-krish-fmtsqv"
           target="_blank"
           rel="noopener noreferrer"
-          className="group h-12 px-7 rounded-xl text-sm font-semibold flex items-center gap-2 transition-all duration-300"
+          className="group h-12 px-7 rounded-xl text-sm font-semibold flex items-center gap-2 transition-all duration-300 text-white"
           style={{
             background: "linear-gradient(135deg, #4f8ef7, #6366f1)",
             boxShadow: "0 0 32px rgba(79,142,247,0.3)",
