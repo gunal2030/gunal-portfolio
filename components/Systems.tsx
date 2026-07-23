@@ -14,6 +14,11 @@ const systems = [
     stack: ["Gemini 1.5 Flash", "Twilio Voice", "Whisper STT", "n8n", "Google Calendar", "Slack", "Google Sheets"],
     gradient: "from-[rgba(79,142,247,0.15)] to-[rgba(79,142,247,0.02)]",
     accentColor: "#4f8ef7",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3 5C3 3.9 3.9 3 5 3H7.5L9 7L7 8.5C7.8 10.2 9.8 12.2 11.5 13L13 11L17 12.5V15C17 16.1 16.1 17 15 17C8.4 17 3 11.6 3 5Z" stroke="#4f8ef7" strokeWidth="1.3" strokeLinejoin="round"/>
+      </svg>
+    ),
     pipelineFlow: "Customer Call → Twilio Voice → Whisper STT → Gemini 1.5 → n8n Router → Google Calendar → Slack Alert → Google Sheets CRM",
     systemPrompt: `You are an AI Receptionist for Dallas Climate Solutions (HVAC & Plumbing).
 Your job:
@@ -73,6 +78,12 @@ def process_inbound_lead(transcript, api_key):
     stack: ["Gemini API", "n8n", "Gmail API", "LinkedIn API", "Google Sheets"],
     gradient: "from-[rgba(45,212,191,0.12)] to-[rgba(45,212,191,0.02)]",
     accentColor: "#2dd4bf",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M2 10L18 10M18 10L13 5M18 10L13 15" stroke="#2dd4bf" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/>
+        <circle cx="6" cy="10" r="2" stroke="#2dd4bf" strokeWidth="1.3"/>
+      </svg>
+    ),
     pipelineFlow: "Prospect Input → LLM Personalizer → Gmail/LinkedIn API → Response Monitor → Qualification Score → CRM Update",
     systemPrompt: "You are a sales outreach assistant. Personalize the first line based on company reviews and recent news.",
     routingLogic: "IF reply_detected == True → Parse intent with Gemini → IF warm → Auto-send booking link",
@@ -103,6 +114,15 @@ email_body = f"Hi {prospect_data['company']}, noticed your {prospect_data['revie
     stack: ["n8n", "Airtable", "Gemini API", "Gmail API", "Notion"],
     gradient: "from-[rgba(129,140,248,0.12)] to-[rgba(129,140,248,0.02)]",
     accentColor: "#818cf8",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <rect x="3" y="3" width="6" height="4" rx="1" stroke="#818cf8" strokeWidth="1.3"/>
+        <rect x="11" y="3" width="6" height="4" rx="1" stroke="#818cf8" strokeWidth="1.3"/>
+        <rect x="3" y="13" width="6" height="4" rx="1" stroke="#818cf8" strokeWidth="1.3"/>
+        <rect x="11" y="13" width="6" height="4" rx="1" stroke="#818cf8" strokeWidth="1.3"/>
+        <path d="M6 7V10H14V7M10 10V13" stroke="#818cf8" strokeWidth="1.3" strokeLinejoin="round"/>
+      </svg>
+    ),
     pipelineFlow: "Lead Action → Webhook → n8n Router → Airtable/Sheets Upsert → Automated Email Trigger",
     systemPrompt: "Track lead lifecycle stage and update status automatically based on touchpoint timestamps.",
     routingLogic: "IF no_reply > 24 hours → Trigger Day 1 Followup Sequence",
@@ -129,6 +149,16 @@ if lead['score'] == 'HOT':
     stack: ["LangGraph", "Gemini API", "Whisper STT", "ElevenLabs TTS", "n8n", "Custom Orchestrator"],
     gradient: "from-[rgba(232,197,71,0.12)] to-[rgba(232,197,71,0.02)]",
     accentColor: "#e8c547",
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <circle cx="10" cy="10" r="3" stroke="#e8c547" strokeWidth="1.3"/>
+        <circle cx="10" cy="3" r="1.5" stroke="#e8c547" strokeWidth="1.3"/>
+        <circle cx="10" cy="17" r="1.5" stroke="#e8c547" strokeWidth="1.3"/>
+        <circle cx="3" cy="10" r="1.5" stroke="#e8c547" strokeWidth="1.3"/>
+        <circle cx="17" cy="10" r="1.5" stroke="#e8c547" strokeWidth="1.3"/>
+        <path d="M10 6.5V7M10 13V13.5M6.5 10H7M13 10H13.5" stroke="#e8c547" strokeWidth="1.3" strokeLinecap="round"/>
+      </svg>
+    ),
     pipelineFlow: "Voice Input → Whisper STT → Intent Classifier → Sub-Agent Router → Multi-Agent Execution → Spoken TTS Summary",
     systemPrompt: "You are a master orchestrator. Parse user voice intent and delegate sub-tasks to specialized worker agents.",
     routingLogic: "IF voice_intent == 'DAILY_SUMMARY' → Query CRM + Finance Sub-Agent → Aggregate → Generate Audio Briefing",
