@@ -67,8 +67,7 @@ export default function Nav() {
             gunalkrish8@gmail.com
           </a>
           <a
-            href="#contact"
-            className="h-8 px-4 rounded-md bg-[rgba(79,142,247,0.12)] border border-[rgba(79,142,247,0.25)] text-sm text-[#4f8ef7] hover:bg-[rgba(79,142,247,0.2)] hover:border-[rgba(79,142,247,0.4)] transition-all duration-200 flex items-center"
+            href="https://cal.com/gunal-krish-fmtsqv" target="_blank" rel="noopener noreferrer" className="h-8 px-4 rounded-md bg-[rgba(79,142,247,0.12)] border border-[rgba(79,142,247,0.25)] text-sm text-[#4f8ef7] hover:bg-[rgba(79,142,247,0.2)] hover:border-[rgba(79,142,247,0.4)] transition-all duration-200 flex items-center"
           >
             Book a Call
           </a>

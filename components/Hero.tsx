@@ -64,7 +64,9 @@ export default function Hero() {
       {/* CTAs */}
       <div className="flex flex-col sm:flex-row items-center gap-3 mt-10">
         <a
-          href="#contact"
+          href="https://cal.com/gunal-krish-fmtsqv"
+          target="_blank"
+          rel="noopener noreferrer"
           className="group h-12 px-7 rounded-xl text-sm font-semibold flex items-center gap-2 transition-all duration-300"
           style={{
             background: "linear-gradient(135deg, #4f8ef7, #6366f1)",

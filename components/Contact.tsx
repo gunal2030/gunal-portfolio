@@ -91,7 +91,9 @@ export default function Contact() {
               </a>
 
               <a
-                href="#contact"
+                href="https://cal.com/gunal-krish-fmtsqv"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 group"
               >
                 <div className="w-10 h-10 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(232,197,71,0.08)] flex items-center justify-center group-hover:border-[rgba(232,197,71,0.3)] transition-all">
@@ -103,7 +105,7 @@ export default function Contact() {
                 <div>
                   <p className="text-xs text-[#555568] font-mono">Calendar</p>
                   <p className="text-sm text-[#f0f0f5] group-hover:text-[#e8c547] transition-colors">
-                    Book a 20-min strategy call
+                    Book a 20-min strategy call →
                   </p>
                 </div>
               </a>
